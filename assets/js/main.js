@@ -89,8 +89,17 @@ function renderKatalog(items) {
         // Add one card to the HTML string
         html += `
             <div class="card">
-        
-                <div class="image-front">
+
+            <summary>
+             <p>${item.Brand}</p>
+
+                <div class="card-content">
+
+                    <div class="card-title">
+                        ${item.cannumber}
+                    </div>
+            <details>
+            <div class="image-front">
                     <img src="${item['@imagefront']}" alt="${item.Brand}">
                 </div>
 
@@ -99,13 +108,13 @@ function renderKatalog(items) {
                 </div>
                 
 
-                <p>${item.Brand}</p>
+            </details>
+            </summary>
 
-                <div class="card-content">
 
-                    <div class="card-title">
-                        ${item.cannumber}
-                    </div>
+                
+
+               
 
 
                 </div>

@@ -24,9 +24,13 @@ img{
 }
 
 .image-front{
-  max-width: 50px;
+  /*max-width: 50px;*/
 }
 
 .image-right{
-  max-width: 150px;
+  /*max-width: 150px;*/
+}
+
+.card{
+  border-bottom: 0.3px solid black;
 }
