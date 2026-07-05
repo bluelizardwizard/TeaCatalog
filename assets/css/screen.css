@@ -20,7 +20,7 @@ img{
 .katalog-grid {
   display: flex;
   flex-wrap: wrap;
-  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(40px, 1fr));
 }
 
 .image-front{
@@ -33,4 +33,12 @@ img{
 
 .card{
   border-bottom: 0.3px solid black;
+}
+
+.card-title {
+  **background-color: red;
+}
+
+img {
+  width: 200px;
 }

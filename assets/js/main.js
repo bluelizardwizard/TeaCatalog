@@ -98,8 +98,7 @@ function renderKatalog(items) {
                     <div class="card-title">
                         ${item.cannumber}
                     </div>
-            <details>
-            <div class="image-front">
+                <div class="image-front">
                     <img src="${item['@imagefront']}" alt="${item.Brand}">
                 </div>
 
@@ -107,8 +106,7 @@ function renderKatalog(items) {
                     <img src="${item['@imageright']}" alt="${item.Brand}">
                 </div>
                 
-
-            </details>
+                </div>
             </summary>
 
 
@@ -117,7 +115,7 @@ function renderKatalog(items) {
                
 
 
-                </div>
+                
 
             </div>
         `;
