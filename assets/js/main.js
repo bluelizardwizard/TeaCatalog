@@ -91,20 +91,28 @@ function renderKatalog(items) {
             <div class="card">
 
             <summary>
-             <p>${item.Brand}</p>
+                <div class="can-info">
+                    <div class="card-title">
+                            ${item.cannumber}
+                    </div>
+                    <p class>${item.Brand}</p>
+                    <p class>${item.Flavour}</p>
+                    <p class>${item.Gramms}</p>
+                </div>
 
                 <div class="card-content">
-
-                    <div class="card-title">
-                        ${item.cannumber}
+                    <div class="image-front">
+                        <img src="${item['@imagefront']}" alt="${item.Brand}">
                     </div>
-                <div class="image-front">
-                    <img src="${item['@imagefront']}" alt="${item.Brand}">
-                </div>
-
-                <div class="image-right">
-                    <img src="${item['@imageright']}" alt="${item.Brand}">
-                </div>
+                    <div class="image-right">
+                        <img src="${item['@imageright']}" alt="${item.Brand}">
+                    </div>
+                    <div class="image-back">
+                        <img src="${item['@imageright'].replace("image_right", "image_back")}" alt="${item.Brand}">
+                    </div>
+                    <div class="image-left">
+                        <img src="${item['@imageright'].replace("image_right", "image_left")}" alt="${item.Brand}">
+                    </div>
                 
                 </div>
             </summary>

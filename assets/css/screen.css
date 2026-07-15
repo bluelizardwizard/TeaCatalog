@@ -4,9 +4,9 @@
 }
 
 body {
-  font-family: Verdana;
+  font-family: 'Courier New', Courier, monospace;
   padding: 2px;
-  font-size: 16px;
+  font-size: 20px;
 }
 
 h1{
@@ -18,9 +18,7 @@ img{
 }
 
 .katalog-grid {
-  display: flex;
-  flex-wrap: wrap;
-  grid-template-columns: repeat(auto-fit, minmax(40px, 1fr));
+  
 }
 
 .image-front{
@@ -32,13 +30,30 @@ img{
 }
 
 .card{
-  border-bottom: 0.3px solid black;
+  border-bottom: 1px solid rgb(0, 0, 0);
 }
 
 .card-title {
-  **background-color: red;
+}
+
+.card-content {
+  display: flex;
 }
 
 img {
-  width: 200px;
+  width: 25vw;
+}
+
+.can-info {
+  padding-top: 3vh;
+  padding-left: 2vw;
+}
+
+.title {
+  font-family: Helvetica;
+  font-size: 8vh;
+  padding-top: 4vw;
+  padding-bottom: 5vh;
+  text-align: center;
+  border-bottom: 1px solid rgb(0, 0, 0);
 }
